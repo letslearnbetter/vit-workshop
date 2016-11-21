@@ -1,3 +1,0 @@
-# Setup instructions
-
-## Installing mongoDB
