@@ -1,4 +1,4 @@
-# Setting up Node
+# Setting up Node (ubuntu 64-bit)
 
 [Installing NodeJS on Linux machines](https://nodejs.org/en/download/package-manager/)
 
