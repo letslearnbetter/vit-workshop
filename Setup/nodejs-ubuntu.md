@@ -17,7 +17,5 @@ sudo apt-get install -y nodejs
 
 `npm install -g nodemon`
 
-## [Install VSCode editor](https://code.visualstudio.com/docs/setup/linux)
-
 
 
