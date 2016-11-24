@@ -43,11 +43,11 @@ Lastly we will export this model so that other files can use it create objects u
 `module.exports = Pet;`
 
 ## Connect to mongoose
-Go to `app.js` and import mongoose again: `var mongoose = require('mongoose')`  
-Connect to mongodb by adding this line `mongoose.connect('mongodb://localhost/node-pets');`  
-Here `localhost` is the hostname where mongodb server is rinning and `node-pets` is the database name.  
+1. Go to `app.js` and import mongoose again: `var mongoose = require('mongoose')`  
+2. Connect to mongodb by adding this line `mongoose.connect('mongodb://localhost/node-pets');`
+Here `localhost` is the hostname where mongodb server is rinning and `node-pets` is the database name.
 If the database does not already exisit, it will be created when we start adding documents.  
-Go back to the terminal and verify that the node app got restarted without any errrors and that
+3. Go back to the terminal and verify that the node app got restarted without any errrors and that
 you are still able to access the [localhost:3000](localhost:3000) page. This means that the connection
 to mongodb server was successful.
 
