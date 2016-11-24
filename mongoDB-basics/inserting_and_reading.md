@@ -26,6 +26,7 @@ a document which has only a subset of the keys that we have been using. Run `db.
 the results.
 
 ## Basic querrying
+Querries are the equivalent of the SQL WHERE clause. They are used to filter on values.
 1. To filter by a particular field name: `db.pets.find({name: 'poppy'})`
 ```
 { "_id" : ObjectId("5836dc8d10c4218797088eb4"), "name" : "poppy", "type" : "dog", "age" : 12 }
@@ -48,5 +49,19 @@ the age field less than 10: `db.pets.find({'age': {$lt: 10}})`
 { "_id" : 2, "name" : "husky", "type" : "dog", "age" : 7 }
 { "_id" : 3, "name" : "precious", "type" : "cat", "age" : 9 }
 ```
+
+## Projections
+Projections are the equivalent of the SQL SELECT clause. They are used to return only a subset of
+the fields present in the document.
+
+For example to get only name fields, we do: `db.pets.find({}, {name: 1})`
+Note that the `_id` field is always returned. To exclude the `_id` field do: 
+`db.pets.find({}, {name: 1, _id: 0})`  
+
+We can also use negative logic to exclude fields. To exclude the age field: `db.pets.find({}, {age: 0})`  
+
+We cannot used both inclusions and exclusions in the same command (with the exception of the case of `_id`)
+
+
 
 
