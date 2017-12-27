@@ -28,5 +28,4 @@ Something like the following should be be printed in the console.
 ```
 Visit [localhost:3000](localhost:3000) in a browser and a welcome page should be rendered.
 
-# Next
-In the next section, we will use mongoose to create a new schema and create objects using that schema.
+# [Next](Step2.md)
